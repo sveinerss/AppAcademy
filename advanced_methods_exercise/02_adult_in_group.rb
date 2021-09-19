@@ -2,17 +2,21 @@
 # The method should return true if there is at least 1 person with an age of 18 or greater.
 # The method should return false otherwise.
 
-#defined the method
-def adult_in_group?(x)
-#separating out hashes
-    x.each do |person|
-#if hash has age value above 18 then it returns true
-        if person[:age] >= 18
-                return true
-        end
-    end
-#otherwise, loop finishes then returns false
-    return false
+# #defined the method
+# def adult_in_group?(x)
+# #separating out hashes
+#     x.each do |person|
+# #if hash has age value above 18 then it returns true
+#         if person[:age] >= 18
+#                 return true
+#         end
+#     end
+# #otherwise, loop finishes then returns false
+#     return false
+# end
+
+def adult_in_group? (peoples)
+    return peoples.any? {|people| people[:age] >= 18}
 end
 
 people_1 = [
