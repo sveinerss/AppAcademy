@@ -11,7 +11,6 @@
 
 
 def my_rotate!(array, amt)
-<<<<<<< Updated upstream
     # creating a variable to capture # rotations 
     count = 0
     #route left rotations
