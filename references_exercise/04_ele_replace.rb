@@ -7,7 +7,17 @@
 # to be the same before and after calling your method.
 
 def ele_replace!(array, hash)
-
+    i = 0 
+    # create while loop to visit all elements in array
+    while i < array.length
+        # if element is located as key in hash, then value of key will replace the element i in array
+        if hash.has_key? (array[i])
+            array[i] = hash[array[i]]
+        end
+        # goes through all elements
+        i += 1
+    end
+    array
 end
 
 
