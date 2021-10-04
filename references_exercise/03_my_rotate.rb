@@ -62,22 +62,6 @@ def my_rotate!(array, amt)
         end    
     end
     array
-=======
-    
-    i =0
-    while i <  array.length
-        array.each_with_index do |num,idx|
-            if amt >0
-                new = array [(idx + amt) % array.length]
-                array [(idx + amt) % array.length] =  array [idx]
-            end
-        end
-        i += 1
-    end
-    
-
-array
->>>>>>> Stashed changes
 end
 
 
