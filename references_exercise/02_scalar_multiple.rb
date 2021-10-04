@@ -7,7 +7,14 @@
 # to be the same before and after calling your method.
 
 def scalar_multiple!(array, multiplier)
-
+    array.length
+    i = 0
+    while i < array.length
+        array [i] =  array[i] * multiplier
+        i += 1
+    end
+    
+ array
 end
 
 
