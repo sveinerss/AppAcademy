@@ -31,8 +31,6 @@ def substrings (substr)
 end
 
 def palindrome_substrings (bigdaddystr)
-    all_arrays = substrings(bigdaddystr)
-
-    all_arrays.select {|ele| palindrome?(ele) && ele.length > 1 }
+    substrings(bigdaddystr).select {|ele| palindrome?(ele) && ele.length > 1 }
     
 end
