@@ -8,11 +8,14 @@ require "byebug"
 def fuzz_buzz(num)
     numbers = []
     (1..num).each do |i|
-        if i % 3 != 0 || i % 5 != 0
+        if i % 3 == 0 || i % 5 == 0
+            next
+        else
             numbers << i
-debugger
         end
     end
 
     numbers
 end
+
+fuzz_buzz(11)
