@@ -1,0 +1,27 @@
+[0m[1;32mArray#find_index[m
+
+(from ruby core)
+------------------------------------------------------------------------
+  ary.find_index(obj)             ->  int or nil
+  ary.find_index {|item| block}  ->  int or nil
+  ary.find_index                  ->  Enumerator
+
+------------------------------------------------------------------------
+
+Returns the [4mindex[m of the first object in [7mary[m such that the
+object is [7m==[m to [7mobj[m.
+
+If a block is given instead of an argument, returns the [4mindex[m of
+the first object for which the block returns [7mtrue[m.  Returns
+[7mnil[m if no match is found.
+
+See also Array#rindex.
+
+An Enumerator is returned if neither a block nor argument is given.
+
+  a = [ "a", "b", "c" ]
+  a.index("b")              #=> 1
+  a.index("z")              #=> nil
+  a.index {|x| x == "b"}    #=> 1
+
+
