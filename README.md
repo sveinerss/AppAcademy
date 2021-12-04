@@ -1,2 +1,2 @@
 # AppAcademy
-i am a poopoo head
+My journey to learn the foundations of coding and master some languages along the way. 
